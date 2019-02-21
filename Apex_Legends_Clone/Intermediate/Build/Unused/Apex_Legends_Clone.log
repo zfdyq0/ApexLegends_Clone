@@ -1,0 +1,12 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Projects\ApexLegends_Clone).
+  Creating makefile for hot reloading Apex_Legends_CloneEditor (source directory changed)
+  Compiling game modules for hot reload
+  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 3 actions with 16 processes...
+    [1/3] Apex_Legends_CloneGameModeBase.cpp
+    [2/3] UE4Editor-Apex_Legends_Clone-8830.lib
+       D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-8830.lib 라이브러리 및 D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-8830.exp 개체를 생성하고 있습니다.
+    [3/3] UE4Editor-Apex_Legends_Clone-8830.dll
+       D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-8830.suppressed.lib 라이브러리 및 D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-8830.suppressed.exp 개체를 생성하고 있습니다.
+  Deploying Apex_Legends_CloneEditor Win64 Development...
+  Total build time: 6.37 seconds (Parallel executor: 1.56 seconds)

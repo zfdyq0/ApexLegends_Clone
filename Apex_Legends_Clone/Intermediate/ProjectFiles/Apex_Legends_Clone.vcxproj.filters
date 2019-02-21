@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Apex_Legends_Clone.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{79BBEA23-6C14-478E-AE76-4932D950DD15}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Apex_Legends_Clone.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Apex_Legends_CloneEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{7AA10314-1164-4565-85F7-7C131D6BEDB4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Apex_Legends_Clone">
+      <UniqueIdentifier>{0551CF2C-B08F-4FAE-B766-C82FEBA1A57C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Apex_Legends_Clone\Apex_Legends_Clone.Build.cs">
+      <Filter>Source\Apex_Legends_Clone</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Apex_Legends_Clone\Apex_Legends_Clone.cpp">
+      <Filter>Source\Apex_Legends_Clone</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Apex_Legends_Clone\Apex_Legends_Clone.h">
+      <Filter>Source\Apex_Legends_Clone</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Apex_Legends_Clone\Apex_Legends_CloneGameModeBase.cpp">
+      <Filter>Source\Apex_Legends_Clone</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Apex_Legends_Clone\Apex_Legends_CloneGameModeBase.h">
+      <Filter>Source\Apex_Legends_Clone</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

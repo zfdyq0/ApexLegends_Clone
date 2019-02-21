@@ -1,0 +1,3 @@
+D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Source\Apex_Legends_Clone\Apex_Legends_Clone.Build.cs
+D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Source\Apex_Legends_Clone.Target.cs
+D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Source\Apex_Legends_CloneEditor.Target.cs
