@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeApex_Legends_Clone_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/Apex_Legends_Clone",
 				PKG_CompiledIn | 0x00000000,
-				0x19408A4E,
-				0x4A610E37,
+				0xE5481B95,
+				0xD3F14D86,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};
