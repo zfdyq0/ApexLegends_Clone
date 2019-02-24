@@ -2,6 +2,7 @@
 
 #include "BaseCharacter.h"
 #include "Apex_Legends_Clone.h"
+#include "Camera/CameraComponent.h"
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -9,6 +10,14 @@ ABaseCharacter::ABaseCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// Create first-person camera component
+	FPSCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
+	// Attach camera component to capsule component
+	FPSCameraComponent->SetupAttachment((USceneComponent*)GetCapsuleComponent());
+	// Position the camera to above to eye height
+	FPSCameraComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 50.0f + BaseEyeHeight));
+	// Allow to control the pawn's camera rotation
+	FPSCameraComponent->bUsePawnControlRotation = true;
 }
 
 // Called when the game starts or when spawned

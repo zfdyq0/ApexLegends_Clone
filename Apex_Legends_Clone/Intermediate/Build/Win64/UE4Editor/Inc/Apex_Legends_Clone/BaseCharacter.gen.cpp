@@ -21,6 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 	APEX_LEGENDS_CLONE_API UFunction* Z_Construct_UFunction_ABaseCharacter_MoveRight();
 	APEX_LEGENDS_CLONE_API UFunction* Z_Construct_UFunction_ABaseCharacter_StartJump();
 	APEX_LEGENDS_CLONE_API UFunction* Z_Construct_UFunction_ABaseCharacter_StopJump();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
 	void ABaseCharacter::StaticRegisterNativesABaseCharacter()
 	{
@@ -156,6 +157,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FPSCameraComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FPSCameraComponent;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -176,6 +182,18 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		{ "ModuleRelativePath", "BaseCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseCharacter_Statics::NewProp_FPSCameraComponent_MetaData[] = {
+		{ "Category", "BaseCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "BaseCharacter.h" },
+		{ "ToolTip", "FPS camera" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_FPSCameraComponent = { UE4CodeGen_Private::EPropertyClass::Object, "FPSCameraComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(ABaseCharacter, FPSCameraComponent), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_FPSCameraComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::NewProp_FPSCameraComponent_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_FPSCameraComponent,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABaseCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseCharacter>::IsAbstract,
 	};
@@ -184,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
 		0x009000A0u,
 		FuncInfo, ARRAY_COUNT(FuncInfo),
-		nullptr, 0,
+		Z_Construct_UClass_ABaseCharacter_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
@@ -199,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseCharacter, 2972898990);
+	IMPLEMENT_CLASS(ABaseCharacter, 837742261);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ABaseCharacter(Z_Construct_UClass_ABaseCharacter, &ABaseCharacter::StaticClass, TEXT("/Script/Apex_Legends_Clone"), TEXT("ABaseCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

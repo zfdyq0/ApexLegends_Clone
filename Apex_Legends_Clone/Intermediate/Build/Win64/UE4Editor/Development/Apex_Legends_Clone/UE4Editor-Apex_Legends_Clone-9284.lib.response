@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Apex_Legends_Clone-9284.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\Apex_Legends_CloneEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\Apex_Legends_Clone.cpp.obj"
+"D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\Apex_Legends_CloneGameModeBase.cpp.obj"
+"D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\BaseCharacter.cpp.obj"
+"D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\Apex_Legends_Clone.init.gen.cpp.obj"
+"D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\Apex_Legends_CloneGameModeBase.gen.cpp.obj"
+"D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\BaseCharacter.gen.cpp.obj"
+"D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\PCLaunch.rc.res"
+/OUT:"D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-9284.lib"
