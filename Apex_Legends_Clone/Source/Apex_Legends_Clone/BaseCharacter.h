@@ -26,11 +26,19 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	
-	//
+	// Called to proceed forward and back movement
 	UFUNCTION()
 	void MoveForward(float value);
 
+	// Called to proceed right and left movement
 	UFUNCTION()
 	void MoveRight(float value);
 
+	// Set jump-flag
+	UFUNCTION()
+	void StartJump();
+
+	// Proceed jump-end flag: remove jump flag
+	UFUNCTION()
+	void StopJump();
 };
