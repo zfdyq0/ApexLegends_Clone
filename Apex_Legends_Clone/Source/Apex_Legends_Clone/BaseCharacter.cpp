@@ -3,6 +3,7 @@
 #include "BaseCharacter.h"
 #include "Apex_Legends_Clone.h"
 #include "Camera/CameraComponent.h"
+#include "Components/StaticMeshComponent.h"
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -18,6 +19,17 @@ ABaseCharacter::ABaseCharacter()
 	FPSCameraComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 50.0f + BaseEyeHeight));
 	// Allow to control the pawn's camera rotation
 	FPSCameraComponent->bUsePawnControlRotation = true;
+	// FPS mesh component
+	FPSMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("FirstPersonMesh"));
+	// Only owner can see this mesh
+	FPSMesh->SetOnlyOwnerSee(true);
+	// Attach FPSMesh to FPSCamera
+	FPSMesh->SetupAttachment(FPSCameraComponent);
+	// Turn off some environment shadowing, keep mesh looks one
+	FPSMesh->bCastDynamicShadow = false;
+	FPSMesh->CastShadow = false;
+	// Everyone can see this mesh but owner
+	GetMesh()->SetOwnerNoSee(true);
 }
 
 // Called when the game starts or when spawned

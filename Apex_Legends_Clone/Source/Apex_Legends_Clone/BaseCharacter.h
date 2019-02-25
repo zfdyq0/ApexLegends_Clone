@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Camera/CameraComponent.h"
+#include "Components/StaticMeshComponent.h"
 #include "BaseCharacter.generated.h"
 
 UCLASS()
@@ -20,30 +21,34 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
+
 	// Called to proceed forward and back movement
 	UFUNCTION()
-	void MoveForward(float value);
+		void MoveForward(float value);
 
 	// Called to proceed right and left movement
 	UFUNCTION()
-	void MoveRight(float value);
+		void MoveRight(float value);
 
 	// Set jump-flag
 	UFUNCTION()
-	void StartJump();
+		void StartJump();
 
 	// Proceed jump-end flag: remove jump flag
 	UFUNCTION()
-	void StopJump();
+		void StopJump();
 
 	// FPS camera
 	UPROPERTY(VisibleAnywhere)
-	UCameraComponent* FPSCameraComponent;
+		UCameraComponent* FPSCameraComponent;
+
+	// FPS arm mesh, Visible only to owner
+	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+		USkeletalMeshComponent* FPSMesh;
 };
