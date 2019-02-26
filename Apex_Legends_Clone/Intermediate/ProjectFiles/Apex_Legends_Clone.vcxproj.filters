@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Apex_Legends_Clone.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F8A34E2E-777A-4C3A-A31C-6CB7078843DA}</UniqueIdentifier>
+      <UniqueIdentifier>{988023FB-3398-412C-A943-C1ADA6AAE218}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Apex_Legends_Clone.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{6D5A4DDD-0793-4BA4-9889-050E47BF53F5}</UniqueIdentifier>
+      <UniqueIdentifier>{1BBEECF2-2CE8-4384-840C-45CDA15901F9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,9 +23,18 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\Apex_Legends_Clone">
-      <UniqueIdentifier>{76BC4EAF-8097-49D8-A8FF-D0A0DC544459}</UniqueIdentifier>
+      <UniqueIdentifier>{A9C99A04-806C-4F99-A17C-37D9C2F7DA99}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Apex_Legends_Clone\ApexLegends_Projectile.cpp">
+      <Filter>Source\Apex_Legends_Clone</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Apex_Legends_Clone\ApexLegends_Projectile.h">
+      <Filter>Source\Apex_Legends_Clone</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Apex_Legends_Clone\Apex_Legends_Clone.Build.cs">
       <Filter>Source\Apex_Legends_Clone</Filter>
     </None>

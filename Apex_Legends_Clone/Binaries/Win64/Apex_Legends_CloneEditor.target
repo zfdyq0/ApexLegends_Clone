@@ -18,11 +18,11 @@
 	"Launch": "$(EngineDir)/Binaries/Win64/UE4Editor.exe",
 	"BuildProducts": [
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Apex_Legends_Clone-831.dll",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Apex_Legends_Clone-8333.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Apex_Legends_Clone-831.pdb",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-Apex_Legends_Clone-8333.pdb",
 			"Type": "SymbolFile"
 		},
 		{

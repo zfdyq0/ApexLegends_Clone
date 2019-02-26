@@ -4,14 +4,13 @@
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Parsing headers for Apex_Legends_CloneEditor
     Running UnrealHeaderTool "D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Apex_Legends_Clone.uproject" "D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\Apex_Legends_CloneEditor\Development\Apex_Legends_CloneEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for Apex_Legends_CloneEditor in 10.787853 seconds
-  Building 5 actions with 16 processes...
-    [1/5] Apex_Legends_Clone.init.gen.cpp
-    [2/5] BaseCharacter.gen.cpp
-    [3/5] BaseCharacter.cpp
-    [4/5] UE4Editor-Apex_Legends_Clone-831.lib
-       D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-831.lib 라이브러리 및 D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-831.exp 개체를 생성하고 있습니다.
-    [5/5] UE4Editor-Apex_Legends_Clone-831.dll
-       D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-831.suppressed.lib 라이브러리 및 D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-831.suppressed.exp 개체를 생성하고 있습니다.
+  Reflection code generated for Apex_Legends_CloneEditor in 10.8353045 seconds
+  Building 4 actions with 16 processes...
+    [1/4] BaseCharacter.gen.cpp
+    [2/4] BaseCharacter.cpp
+    [3/4] UE4Editor-Apex_Legends_Clone-8333.lib
+       D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-8333.lib 라이브러리 및 D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-8333.exp 개체를 생성하고 있습니다.
+    [4/4] UE4Editor-Apex_Legends_Clone-8333.dll
+       D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-8333.suppressed.lib 라이브러리 및 D:\Projects\ApexLegends_Clone\Apex_Legends_Clone\Intermediate\Build\Win64\UE4Editor\Development\Apex_Legends_Clone\UE4Editor-Apex_Legends_Clone-8333.suppressed.exp 개체를 생성하고 있습니다.
   Deploying Apex_Legends_CloneEditor Win64 Development...
-  Total build time: 17.72 seconds (Parallel executor: 1.84 seconds)
+  Total build time: 18.18 seconds (Parallel executor: 2.12 seconds)

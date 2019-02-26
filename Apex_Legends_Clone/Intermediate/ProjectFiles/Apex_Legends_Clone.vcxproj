@@ -649,6 +649,9 @@
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
+    <None Include="..\..\Config\DefaultInput.ini"/>
+    <ClCompile Include="..\..\Source\Apex_Legends_Clone\ApexLegends_Projectile.cpp"/>
+    <ClInclude Include="..\..\Source\Apex_Legends_Clone\ApexLegends_Projectile.h"/>
     <None Include="..\..\Source\Apex_Legends_Clone\Apex_Legends_Clone.Build.cs"/>
     <ClCompile Include="..\..\Source\Apex_Legends_Clone\Apex_Legends_Clone.cpp"/>
     <ClInclude Include="..\..\Source\Apex_Legends_Clone\Apex_Legends_Clone.h"/>

@@ -44,6 +44,10 @@ public:
 	UFUNCTION()
 		void StopJump();
 
+	// Launch process
+	UFUNCTION()
+		void Fire();
+
 	// FPS camera
 	UPROPERTY(VisibleAnywhere)
 		UCameraComponent* FPSCameraComponent;
@@ -51,4 +55,11 @@ public:
 	// FPS arm mesh, Visible only to owner
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 		USkeletalMeshComponent* FPSMesh;
+
+	// Muzzle offset on camera position
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+		FVector MuzzleOffset;
+
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+		TSubclassOf<class AApexLegends_Projectile> ProjectileClass;
 };

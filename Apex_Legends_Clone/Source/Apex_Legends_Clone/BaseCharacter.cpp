@@ -4,6 +4,7 @@
 #include "Apex_Legends_Clone.h"
 #include "Camera/CameraComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "ApexLegends_Projectile.h"
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -65,6 +66,7 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	// Setup "Action" binding
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ABaseCharacter::StartJump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ABaseCharacter::StopJump);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ABaseCharacter::Fire);
 }
 
 void ABaseCharacter::MoveForward(float value) {
@@ -84,4 +86,37 @@ void ABaseCharacter::StartJump() {
 
 void ABaseCharacter::StopJump() {
 	bPressedJump = false;
+}
+
+void ABaseCharacter::Fire() {
+	// Try projectile launch
+	if (ProjectileClass) {
+		// Get camera transform
+		FVector CameraLocation;
+		FRotator CameraRotation;
+		GetActorEyesViewPoint(CameraLocation, CameraRotation);
+
+		// Convert Muzzle's offset from camera space to world space
+		FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
+		FRotator MuzzleRotation = CameraRotation;
+
+		// Raise aim to a little bit higher
+		MuzzleRotation.Pitch += 10.0f;
+		UWorld* World = GetWorld();
+
+		if (World) {
+			FActorSpawnParameters SpawnParams;
+			SpawnParams.Owner = this;
+			SpawnParams.Instigator = Instigator;
+
+			// Spawn projectile in muzzle position
+			AApexLegends_Projectile* Projectile = World->SpawnActor<AApexLegends_Projectile>(ProjectileClass, MuzzleLocation, MuzzleRotation, SpawnParams);
+			
+			if (Projectile) {
+				// Find out launch direction
+				FVector LaunchDirection = MuzzleRotation.Vector();
+				Projectile->FireInDirection(LaunchDirection);
+			}
+		}
+	}
 }

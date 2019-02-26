@@ -15,6 +15,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Apex_Legends_Clone_Source_Apex_Legends_Clone_BaseCharacter_h_14_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Fire(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execStopJump) \
 	{ \
 		P_FINISH; \
@@ -51,6 +59,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define Apex_Legends_Clone_Source_Apex_Legends_Clone_BaseCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Fire(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execStopJump) \
 	{ \
